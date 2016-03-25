@@ -20,7 +20,7 @@ import { LowCalPipe } from './lowcal.pipe';
   <meal-display *ngFor="#currentMeal of mealList | lowCal:filterLowCal"
     (click)="mealClicked(currentMeal)"
     [class.selected]="currentMeal === selectedMeal"
-    [keg]="currentMeal">
+    [meal]="currentMeal">
   </meal-display>
   <edit-meal-details *ngIf="selectedMeal" [meal]="selectedMeal">
   </edit-meal-details>
