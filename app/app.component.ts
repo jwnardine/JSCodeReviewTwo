@@ -4,7 +4,7 @@ import { Meal } from './meal.model';
 
 @Component({
   selector: 'my-app',
-  directives: [KegListComponent],
+  directives: [MealListComponent],
   template: `
     <div class="container">
       <p>app.component.ts</p>
