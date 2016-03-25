@@ -16,12 +16,11 @@ export class MealComponent {
   public meal: Meal;
   }
 
-
 checkCalCount() {
   if(this.meal.calories >= 300) {
     this.meal.lowCal = false;
     console.log("HighCal")
-  } else {
+    } else {
     this.meal.lowCal = true;
   }
 }
