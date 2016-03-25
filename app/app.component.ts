@@ -7,13 +7,15 @@ import { Meal } from './meal.model';
   directives: [MealListComponent],
   template: `
     <div class="container">
-      <p>app.component.ts</p>
-        <h1>Meal List</h1>
-        <meal-list
-          [mealList]="meals"
-          (onMealSelect)="mealWasSelected($event)">
-        </meal-list>
+      <div class="app-blue">
+        <p>app.component.ts</p>
+          <h1>Meal List</h1>
+          <meal-list
+            [mealList]="meals"
+            (onMealSelect)="mealWasSelected($event)">
+            </meal-list>
       </div>
+    </div>
   `
 })
 
