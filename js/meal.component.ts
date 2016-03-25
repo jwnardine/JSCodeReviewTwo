@@ -14,7 +14,6 @@ import { Meal } from './meal.model';
 })
 export class MealComponent {
   public meal: Meal;
-  }
 
 checkCalCount() {
   if(this.meal.calories >= 300) {
@@ -22,5 +21,6 @@ checkCalCount() {
     console.log("HighCal")
     } else {
     this.meal.lowCal = true;
+    }
   }
 }
