@@ -8,7 +8,6 @@ import { Meal } from './meal.model';
   template: `
     <div class="container">
       <div class="app-blue">
-        <p>app.component.ts</p>
           <h1>Meal List</h1>
           <meal-list
             [mealList]="meals"
