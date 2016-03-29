@@ -10,11 +10,11 @@ export class LowCalPipe implements PipeTransform {
     var desiredMealState = args[0];
     if(desiredMealState === "lowCal") {
       return input.filter(function(meal) {
-        return meal.lowCal;
+        return meal.calories <= 300;
       });
     } else if (desiredMealState === "highCal") {
       return input.filter((meal) => {
-        return !meal.lowCal;
+        return meal.calories > 300;
       });
     } else {
       return input;
